@@ -26,7 +26,7 @@ body {
     position: relative;
     width: 100vw;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: 141414;
     z-index: 1000;
 }
 
@@ -84,7 +84,7 @@ body {
 .banner {
     position: relative;
     justify-content: center;
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
     background: url('https://br.web.img3.acsta.net/r_1920_1080/pictures/23/03/28/10/09/0471208.jpg') no-repeat center center/cover;
     display: flex;
@@ -95,23 +95,26 @@ body {
 }
  
 .banner-content{
-    width: 40vw;
+    width: 60vw;
 } 
 
 .banner-content h2 {
     font-size: 2rem;
-    margin-bottom: 15px;
-    width: 60vw;
+    font-weight: 750;
+    margin: 0 0 15px 30px;
+    width: 100vw;
 }
 
 .banner-content .subtitle {
     font-size: 1.2rem;
     line-height: 1.6;
-    width: 50vw; /* Limita a largura a metade da página */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    text-align: justify; /* Justifica o texto para melhor alinhamento */
-    word-wrap: break-word; /* Garante a quebra de palavras longas */
-    overflow-wrap: break-word; /* Compatibilidade adicional para quebra de palavras */
+    width: 100vw;
+    word-wrap:break-word;
+    position: relative;
+    /*text-align: justify;
+    flex-direction: ;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; */
 }
 
 .banner .buttom {
@@ -153,13 +156,14 @@ body {
 }
 
 /* Slider */
-.catalogo {
-    margin-top: 20px;
-    padding: 20px 20px;
+.catalog {
+    margin: 20px 0 0 50px;
+    width: 100vw;
 }
 
-.catalogo h4 {
+.catalog h4 {
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 20px 0 10px;
 }
 
