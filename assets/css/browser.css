@@ -114,9 +114,9 @@ body {
     word-wrap:break-word;
     position: relative;
     text-align: justify;
-    flex-direction: ;
+    flex-direction: column;
     word-wrap: break-word; 
-    overflow-wrap: break-word;*/
+    overflow-wrap: break-word;
 }
 
 .banner .buttom {
