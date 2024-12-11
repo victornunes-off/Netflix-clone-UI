@@ -19,16 +19,15 @@ body {
 
 /* Header */
 .header {
+    margin-left: 30px;
+    padding: 0px 30px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
-    padding: 0px 30px;
     position: relative;
-    width: 100vw;
-    top: 0;
     background-color: 141414;
-    z-index: 1000;
+    /*z-index: 1000;*/
 }
 
 .netflixlogo img {
@@ -167,44 +166,41 @@ body {
 .catalog h4 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 20px 0 10px;
+    /*margin: 20px 0 10px;*/
 }
 
 .slider {
     width: 100vw;
     display: flex;
-    overflow-x: auto;
-    scroll-behavior:auto;
+    overflow-x: scroll;
     gap: 10px;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
 }
 
+.slider::-webkit-scrollbar-track {
+    background-color: #141414;
+}
+
 .slider::-webkit-scrollbar {
     display:flow-root;
-    box-decoration-break: clone;
+    box-decoration-break:clone;
+    height: 4px;
+    background: #f4f4f4;
 }
+
+.slider::-webkit-scrollbar-thumb {
+    background: #353333;
+  }
 
 .show-card {
     width: 100vw;
     height: auto;
-    border-radius: 4px;
-    overflow: hidden;
+    border-radius: 5%;
     cursor: pointer;
     transition: transform 0.3s ease;
     flex-grow: 1;
-}
-
-.show-card img {
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-    transition:  0.5s ease;
-}
-
-.show-card:hover img{
-    transform: scale(1);
-    transition: 0.5s;
+    margin: 20px 0;
 }
 
 .show-card:hover {
@@ -213,7 +209,21 @@ body {
     object-fit: cover;
 }
 
+.show-card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    /*transition:  0.5s ease;*/
+}
+
+/*.show-card:hover img{
+    transform: scale(1);
+    transition: 0.5s;
+}*/
+
+
 footer {
+    margin-bottom: 30px;
     background-color: #000;
     color: #666;
     padding: 20px;
@@ -225,7 +235,7 @@ footer {
 
 .icons-media{
     color: #fff;
-    margin-left: 30px;
+    margin: 10px 0 20px 30px;
     text-decoration: none;
     font-size: 18px;
     text-align: left;
@@ -260,13 +270,11 @@ footer {
 
 
 .footer-service-code {
-    margin: 20px;
+    margin: 30px;
     display: block;
 }
   
 .footer-service-code p {
-    margin: 15px;
-    padding: 8px 8px;
     font-size: 12pt;
     border: 1px solid;
     display: block;
@@ -275,14 +283,12 @@ footer {
 }
   
 .footer-copyright {
-    margin: 20px;
+    margin: 30px;
     display: block;
     text-align: left;
 }
 
 .footer-copyright p {
-    margin: 15px;
-    padding: 8px 8px;
     font-size: 12pt;
     display: block;
     height: auto;
@@ -314,6 +320,10 @@ footer {
 
     .menu-right .right a {
         font-size: 16px;
+    }
+    .footer {
+        font-size: 1rem;
+        max-width: 70%;
     }
 }
 
@@ -352,6 +362,12 @@ footer {
         min-width: 150px;
         height: auto;
     }
+    .footer {
+        max-width: 100%;
+        height: auto;
+        font-size: 0.5rem;
+        word-wrap: break-word;
+    }
 }
 
 /* Telas muito pequenas (até 480px) */
@@ -376,4 +392,5 @@ footer {
         min-width: 120px;
         height: auto;
     }
+    
 }
