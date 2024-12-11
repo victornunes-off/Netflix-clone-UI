@@ -230,15 +230,17 @@ footer {
     padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    text-align: center;
+    text-align:left;
     flex-wrap: wrap;
 }
 
 .icons-media{
-    color: #fff;
+    display: flex;
+}
+
+.icons-media img {
+    width: 25px;
     margin: 10px 0 20px 30px;
-    text-decoration: none;
-    font-size: 18px;
     text-align: left;
 }
 
@@ -247,7 +249,7 @@ footer {
     column-count: 4; 
     column-gap: 20px;
     text-align: left;
-    justify-content: center; 
+     
 }
 
 .footer-links ul {
