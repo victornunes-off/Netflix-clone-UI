@@ -303,6 +303,9 @@ footer {
 
 /* Telas menores (até 1024px) */
 @media (max-width: 1024px) {
+    .banner{
+        height: auto;
+    }
     .banner-content h2 {
         font-size: 2.5rem;
     }
@@ -376,6 +379,9 @@ footer {
 
 /* Telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
+    .banner{
+        height: auto;
+    }
     .banner-content h2 {
         font-size: 1.8rem;
     }
